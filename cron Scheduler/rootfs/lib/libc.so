@@ -1,0 +1,4 @@
+/* GNU ld script
+ * Use the shared library, but some functions are only in
+ * the static library, so try that secondarily. */
+GROUP ( /ad/eng/projects/linux/ec535/arm-linux//lib/libc.so.0 /ad/eng/projects/linux/ec535/arm-linux//lib/uclibc_nonshared.a /ad/eng/projects/linux/ec535/arm-linux//lib/ld-uClibc.so.0 )

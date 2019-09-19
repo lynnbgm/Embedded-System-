@@ -1,0 +1,12 @@
+#!/bin/sh
+for i in 0 5 10 15 20 25 30 35 40 45
+do
+	echo "Welcome to EC535 Spring 2019! Current date and time: $(date)"
+	sleep 5
+done
+echo "Welcome to EC535 Spring 2019! Current date and time: $(date)"
+sleep 1  #process does not manage to exit in time so that the next cron starts correctly 
+sleep 1 # So the last loop is 1 second less
+sleep 1 # Try to put as much delay as possible to be closer to 5 seconds
+sleep 1
+echo "Welcome to EC535 Spring 2019! Current date and time: $(date)"
